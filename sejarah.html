@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sejarah | SMP Negeri 2 Wedi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark navbar-hero fixed-top navbar-bg-black5"
+    ></nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container text-center">
+        <h3 class="fw-bold text-white" style="font-size: 32px">Pengumuman</h3>
+      </div>
+    </section>
+
+    <!-- KONTEN SEJARAH -->
+    <section class="content-section py-96 px-120">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="text-justify mt-1">
+            SMP Negeri 2 Wedi merupakan sekolah menengah pertama yang
+            berkomitmen untuk mencetak generasi muda yang berprestasi,
+            berdisiplin, dan berkarakter. Kami selalu berupaya memberikan
+            pelayanan pendidikan terbaik bagi peserta didik. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Iste atque quo aliquam
+            veritatis voluptatem, distinctio similique maxime nesciunt impedit,
+            maiores inventore laudantium consectetur quisquam consequatur
+            necessitatibus nihil nulla, at ex? Lorem Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Id voluptas illum consequatur
+            inventore, eum similique veritatis vitae fuga pariatur neque
+            repudiandae commodi saepe ipsum incidunt magnam. Suscipit, delectus
+            omnis. Necessitatibus? Temporibus ad iusto, repellendus debitis
+            consequuntur ex aliquid consectetur quas voluptatum! Magnam beatae
+            corrupti nihil, placeat voluptatem, quisquam illo necessitatibus
+            sapiente voluptate culpa, iste minus. Totam, ad rem? Dolorum, id.
+            Illo aliquid consequuntur quas facere qui repudiandae temporibus
+            molestias odio iusto expedita facilis, totam commodi aliquam
+            accusantium cumque consequatur quod ad nihil est tenetur molestiae
+            omnis in explicabo. Eaque, minima! Eos sint sequi sed omnis, ea ab
+            nisi corporis consequuntur minus animi. Quo at, esse doloremque et,
+            non facere provident nam soluta perspiciatis nostrum quod
+            consectetur sapiente, eaque reiciendis ex. Architecto, odio.
+            Consectetur cupiditate voluptas alias deleniti harum quibusdam saepe
+            ratione voluptates facilis necessitatibus maxime quo iusto aliquam
+            dolor corrupti laudantium fugiat totam adipisci, sit animi
+            consequuntur autem in! Distinctio! Voluptatem cumque voluptas
+            dignissimos placeat quisquam! Nihil quo impedit tenetur, recusandae
+            totam qui dolore dolorum exercitationem quam. Exercitationem
+            explicabo, repellat totam facilis corporis dolor facere non
+            quisquam? Architecto, enim asperiores? Totam doloremque aliquid
+            mollitia veniam amet sequi laboriosam. Quisquam ut aliquid dolor eos
+            recusandae non rerum nostrum, optio, sunt tempore magni eius, error
+            esse consequuntur odio nesciunt labore voluptates illo? Esse,
+            quisquam
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+      fetch("partials/footer.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data; // mencari id footer
+        });
+    </script>
+    <script>
+      fetch("partials/navbar.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data; // mencari id footer
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

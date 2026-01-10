@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Failitas | SMP Negeri 2 Wedi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark navbar-hero fixed-top navbar-bg-black5"
+    ></nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container text-center">
+        <h3 class="fw-bold text-white" style="font-size: 32px">Perpustakaan</h3>
+      </div>
+    </section>
+
+    <section class="bg-light py-96 px-120">
+      <div class="container">
+        <!-- Tombol Kembali -->
+        <a href="fasilitas.html" class="btn btn-primary mb-4">
+          <i class="bi bi-arrow-left me-2"></i>Kembali
+        </a>
+        <!-- Card Beasiswa -->
+        <div class="card card-shadow border-0 h-100">
+          <!-- Gambar -->
+          <img
+            src="asset/perpustakaan/2.png"
+            class="img-fluid"
+            style="max-height: 331px; object-fit: cover"
+            alt="Beasiswa Prestasi Akademik"
+          />
+
+          <!-- Judul -->
+          <div class="bg-primary text-white text-center py-2 fw-bold">
+            Beasiswa Prestasi Akademik
+          </div>
+
+          <!-- Konten -->
+          <div class="card-body p-4">
+            <p class="text-secondary mb-0">
+              Sekolah kami menyediakan program Beasiswa Prestasi Akademik
+              sebagai bentuk apresiasi kepada peserta didik yang memiliki
+              pencapaian akademik unggul. Program ini bertujuan untuk memotivasi
+              siswa agar terus meningkatkan prestasi belajar serta mengembangkan
+              potensi diri secara optimal.Beasiswa diberikan berdasarkan hasil
+              evaluasi akademik, kedisiplinan, dan keaktifan siswa dalam
+              kegiatan pembelajaran. Dengan adanya program ini, sekolah berharap
+              dapat menciptakan lingkungan belajar yang kompetitif, positif, dan
+              berorientasi pada prestasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 7 Footer-->
+    <footer id="footer"></footer>
+    <script>
+      fetch("partials/footer.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data; // mencari id footer
+        });
+    </script>
+    <script>
+      fetch("partials/navbar.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data; // mencari id footer
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

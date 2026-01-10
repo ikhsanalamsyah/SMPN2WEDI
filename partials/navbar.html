@@ -1,0 +1,166 @@
+<div class="container-fluid navbar-padding">
+  <!-- Logo -->
+  <a class="navbar-brand me-3" href="index.html">
+    <img src="asset/logosmp.png" height="40" />
+  </a>
+
+  <!-- Toggle -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div
+      class="d-flex flex-column flex-lg-row w-100 justify-content-lg-between"
+    >
+      <ul class="navbar-nav align-items-center gap-4"></ul>
+
+      <!-- MENU (KANAN) -->
+      <ul class="navbar-nav gap-4 order-2 order-lg-1">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Profil
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="visimisi.html">Visi Misi</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="sejarah.html">Sejarah</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="gurustaff.html">Guru & Staf</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="marssmp.html">Mars SMP</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Akademik
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://elearning.smpn2wedi.sch.id/"
+                target="_blank"
+                >E-Learning</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="perpustakaan.html">Perpustakaan</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Kesiswaan
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="ekstrakulikuler.html"
+                >Ekstrakurikuler</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="osis.html">OSIS</a></li>
+            <li>
+              <a class="dropdown-item" href="beasiswa.html">Beasiswa</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="direktorisiswa.html"
+                >Direktori Siswa</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Informasi
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="berita.html">Berita</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pengumuman.html">Pengumuman</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="prestasi.html">Prestasi</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="galeri.html">Galeri</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Layanan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="ppdb.html">PPDB</a></li>
+            <li>
+              <a class="dropdown-item" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- SEARCH (PALING KANAN) -->
+      <div
+        class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 order-1 order-lg-2"
+      >
+        <button
+          class="btn btn-outline-light px-3 px-lg-5"
+          onclick="toggleSearch()"
+        >
+          <i class="bi bi-search"></i> Search
+        </button>
+
+        <input
+          type="text"
+          id="searchBox"
+          class="form-control d-none"
+          placeholder="Cari sesuatu..."
+        />
+      </div>
+    </div>
+  </div>
+</div>

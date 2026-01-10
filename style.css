@@ -1,0 +1,193 @@
+.hero {
+  height: 90vh;
+  padding-top: 98px;
+  background-image: url("../asset/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: flex-start; /* posisi horizontal kiri */
+  align-items: center; /* posisi vertikal bawah */
+}
+
+/* overlay gelap biar teks kebaca */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* isi hero */
+.hero-content {
+  max-width: 600px; /* supaya teks gak terlalu melebar */
+  color: white;
+  position: relative;
+  z-index: 1; /* biar di atas overlay kalau ada */
+}
+.hero-content {
+  max-width: 600px;
+  margin-left: 0; /* eksplisit */
+  color: white;
+  margin-right: auto; /* nempel kiri */
+}
+
+.page-header {
+  height: 300px;
+  background-image: url("../asset/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* overlay khusus header halaman */
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  color: #ddd;
+}
+.p-24 {
+  padding: 24px;
+}
+.bg-custom {
+  background-color: #f2f2f7;
+}
+.navbar-padding {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.navbar-bg-black5 {
+  background-color: rgba(0, 0, 0, 0.75); /* hitam 50% transparan */
+}
+.berita-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.prestasi-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.perpustakaan-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.beasiswa-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.pengumuman-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.galeri-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.fasilitas-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.fasilitas.detail-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.card-shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+/* Default (Desktop) */
+.px-120 {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.py-96 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .px-120 {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .py-96 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .navbar-padding {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.card-img-custom {
+  width: 100%;
+  height: 234px; /* sesuai Figma */
+  object-fit: cover; /* isi penuh */
+  object-position: center; /* default fokus */
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .px-120 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .py-96 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .navbar-padding {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .card-text {
+    font-size: 12px !important;
+  }
+
+  .btn-sm {
+    font-size: 12px !important;
+  }
+}
+.text-justify {
+  text-align: justify;
+}
+.guru-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    max-height: calc(100vh - 56px); /* 56px = tinggi navbar */
+    overflow-y: auto;
+  }
+}

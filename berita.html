@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sejarah | SMP Negeri 2 Wedi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark navbar-hero fixed-top navbar-bg-black5"
+    ></nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container text-center">
+        <h3 class="fw-bold text-white" style="font-size: 32px">Beasiswa</h3>
+      </div>
+    </section>
+    <!-- section 1 -->
+    <section class="content-section py-96 px-120">
+      <div class="container">
+        <div class="row gx-3 gy-2 align-items-center">
+          <!-- Gambar -->
+          <div class="col-12 col-lg-6">
+            <img
+              src="asset/berita/1.jpg"
+              class="img-fluid rounded"
+              style="height: 384px; object-fit: cover"
+              alt="Kegiatan Belajar Mengajar di Rumah"
+            />
+          </div>
+
+          <!-- Konten -->
+          <div class="col-12 col-lg-6">
+            <h4 class="fw-bold mb-3">Kegiatan Belajar Mengajar di Rumah</h4>
+            <p class="text-muted mb-4 text-justify">
+              Kegiatan belajar mengajar di rumah dilaksanakan sebagai pendukung
+              pembelajaran di sekolah melalui pemberian tugas, materi, dan
+              bimbingan dari guru agar siswa tetap dapat belajar secara optimal.
+            </p>
+            <a href="berita-detail.html" class="btn btn-primary btn-sm">
+              Baca Selengkapnya
+            </a>
+          </div>
+
+          <!-- section 2-->
+
+          <!-- Card 1 -->
+          <div class="row gx-3 gy-2">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card berita-card h-100 border-0">
+                <img
+                  src="asset/berita1.jpg"
+                  class="img-fluid"
+                  style="height: 243px; object-fit: cover"
+                  alt="Asesmen Tengah Semester"
+                />
+                <div class="card-body">
+                  <h6 class="fw-bold">Pelaksanaan Asesmen Tengah Semester</h6>
+                  <p class="small text-muted mb-2">
+                    Sekolah melaksanakan asesmen tengah semester untuk
+                    mengevaluasi hasil belajar siswa.
+                  </p>
+                  <p class="small text-muted">20 Juni 2025</p>
+                  <a href="berita-detail.html" class="btn btn-primary btn-sm">
+                    Baca Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card berita-card h-100 border-0">
+                <img
+                  src="asset/berita/3.jpg"
+                  class="img-fluid"
+                  style="height: 243px; object-fit: cover"
+                  alt="Hari Besar Nasional"
+                />
+                <div class="card-body">
+                  <h6 class="fw-bold">
+                    Kegiatan Peringatan Hari Besar Nasional
+                  </h6>
+                  <p class="small text-muted mb-2">
+                    Siswa dan guru mengikuti kegiatan peringatan hari besar
+                    nasional sebagai bentuk nasionalisme.
+                  </p>
+                  <p class="small text-muted">20 Juni 2025</p>
+                  <a href="berita-detail.html" class="btn btn-primary btn-sm">
+                    Baca Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card berita-card h-100 border-0">
+                <img
+                  src="asset/berita/4.jpg"
+                  class="img-fluid"
+                  style="height: 243px; object-fit: cover"
+                  alt="Prestasi Lomba Siswa"
+                />
+                <div class="card-body">
+                  <h6 class="fw-bold">Prestasi Lomba Siswa</h6>
+                  <p class="small text-muted mb-2">
+                    Siswa SMP Negeri 2 Wedi berhasil meraih prestasi dalam ajang
+                    lomba tingkat kabupaten.
+                  </p>
+                  <p class="small text-muted">20 Juni 2025</p>
+                  <a href="berita-detail.html" class="btn btn-primary btn-sm">
+                    Baca Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 7 Footer-->
+    <footer id="footer"></footer>
+    <script>
+      fetch("partials/footer.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data; // mencari id footer
+        });
+    </script>
+    <script>
+      fetch("partials/navbar.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data; // mencari id footer
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

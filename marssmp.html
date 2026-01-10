@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sejarah | SMP Negeri 2 Wedi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark navbar-hero fixed-top navbar-bg-black5"
+    ></nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container text-center">
+        <h3 class="fw-bold text-white" style="font-size: 32px">Galeri</h3>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container py-96 px-120">
+        <img
+          src="asset/marssmp.png"
+          class="img-fluid mx-auto d-block"
+          alt="Mars SMP"
+        />
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+      fetch("partials/footer.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data; // mencari id footer
+        });
+    </script>
+    <script>
+      fetch("partials/navbar.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data; // mencari id footer
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

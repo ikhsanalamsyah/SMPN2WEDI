@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sejarah | SMP Negeri 2 Wedi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark navbar-hero fixed-top navbar-bg-black5"
+    ></nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container text-center">
+        <h3 class="fw-bold text-white" style="font-size: 32px">Pengumuman</h3>
+      </div>
+    </section>
+
+    <!-- konten visi misi -->
+    <section class="content-section bg-light py-96 px-120">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- Card Visi -->
+          <div class="col-md-6">
+            <div class="card card-shadow h-100">
+              <div
+                class="card-header bg-primary text-white text-center fw-bold"
+              >
+                Visi
+              </div>
+              <div class="lh-lg card-body">
+                <ol class="mb-0">
+                  <li>Unggul dalam prestasi akademik.</li>
+                  <li>Unggul dalam kegiatan Karya Ilmiah Remaja.</li>
+                  <li>Unggul dalam kegiatan keolahragaan.</li>
+                  <li>Unggul dalam kegiatan kesenian.</li>
+                  <li>Unggul dalam kegiatan keterampilan.</li>
+                  <li>Unggul dalam kegiatan keagamaan.</li>
+                  <li>Unggul dalam sikap dan perilaku.</li>
+                  <li>
+                    Unggul dalam menciptakan lingkungan sekolah yang asri,
+                    sejuk, nyaman, dan kondusif.
+                  </li>
+                  <li>Unggul dalam melayani masyarakat.</li>
+                  <li>
+                    Unggul dalam mewujudkan lingkungan yang asri, sejuk, dan
+                    nyaman.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Misi -->
+          <div class="col-md-6">
+            <div class="card card-shadow h-100">
+              <div
+                class="card-header bg-primary text-white text-center fw-bold"
+              >
+                Misi
+              </div>
+              <div class="lh-lg card-body">
+                <ol class="mb-0">
+                  <li>Melaksanakan pengembangan Kurikulum 2013.</li>
+                  <li>Mengembangkan perangkat pembelajaran dan RPP.</li>
+                  <li>Mengembangkan sistem penilaian.</li>
+                  <li>Melaksanakan diversifikasi kurikulum pendidikan.</li>
+                  <li>Mengembangkan manajemen sekolah.</li>
+                  <li>Mengembangkan otonomi sekolah.</li>
+                  <li>Mengembangkan metode pembelajaran.</li>
+                  <li>Mengembangkan kegiatan bidang keagamaan.</li>
+                  <li>Mengembangkan kegiatan bidang olahraga.</li>
+                  <li>Mengembangkan kegiatan bidang pramuka.</li>
+                  <li>Mengembangkan kegiatan bidang keterampilan.</li>
+                  <li>
+                    Mengembangkan lingkungan sekolah yang asri, sejuk, dan
+                    nyaman.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+      fetch("partials/footer.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data; // mencari id footer
+        });
+    </script>
+    <script>
+      fetch("partials/navbar.html") // mengambbil file
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data; // mencari id footer
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
