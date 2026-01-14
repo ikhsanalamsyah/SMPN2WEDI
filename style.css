@@ -33,6 +33,22 @@
   margin-right: auto; /* nempel kiri */
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
 .page-header {
   height: 300px;
   background-image: url("../asset/hero.jpg");
